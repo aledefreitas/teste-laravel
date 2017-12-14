@@ -32,6 +32,9 @@
 
 O código do JS está dentro da pasta e arquivo padrão default do Laravel
 
+- Desenvolvi um pequeno exemplo próprio do Fill de dados do CEP, para demonstrar as técnicas utilizadas em JavaScript + jQuery
+- As dependencias extras estão no ```package.json```
+
 ### Banco de Dados
 
 Para demonstrar o conhecimento da Pattern EAV de modelagem de banco de dados, fiz este exemplo o usando. E utilizei a classe de Cache criada por mim, que está na listagem de dependencias deste repositório
