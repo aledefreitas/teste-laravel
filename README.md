@@ -4,7 +4,7 @@
 
 - Laravel 5.5
 - PHP 7+
-- [aledefreitas/zlx_cache](/aledefreitas/zlx_cache)
+- [aledefreitas/zlx_cache](https://github.com/aledefreitas/zlx_cache)
 
 ### GET
 
