@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 use App\UsersModel;
 
+use ZLX\Cache\Cache as ZLXCache;
+
 use \DateTime;
 
 class HomeController extends Controller
@@ -60,6 +62,8 @@ class HomeController extends Controller
 
             UsersModel::addNewUser($params);
 
+            ZLXCache::clearGroup("Users");
+
             View::share("success", true);
         } catch(\Exception $e) {
             $error = $e->getMessage();
@@ -106,6 +110,8 @@ class HomeController extends Controller
             $params['documento'] = preg_replace("/[^0-9]+/", "", request()->input('documento'));
 
             UsersModel::addNewUser($params);
+
+            ZLXCache::clearGroup("Users");
 
             View::share("success", true);
         } catch(\Exception $e) {
